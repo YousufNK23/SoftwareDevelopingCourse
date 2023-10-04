@@ -32,7 +32,7 @@
 <body>
     <?php
     // Student Information
-    $rn = 586451;
+    $rn = 6558;
     $sn = "Shahid";
     $class = 9;
 
