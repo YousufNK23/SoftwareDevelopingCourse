@@ -52,7 +52,7 @@
     $remarks;
 
     // Determines Grades and Remarks
-    if ($percentage >= 80) {
+    if ($percentage >= 80 && $percentage <= 100) {
         $grade = 'A+';
         $remarks = 'Excellent';
     }else if ($percentage >= 70 && $percentage <= 79) {
