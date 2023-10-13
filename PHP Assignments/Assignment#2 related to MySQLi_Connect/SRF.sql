@@ -5,11 +5,13 @@ CREATE DATABASE SRF;
 USE SRF;
 
 -- TO CREATE TABLE
-CREATE TABLE SINFO (
+CREATE TABLE S_INFO (
     ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     First_Name VARCHAR(250) NOT NULL,
     Last_Name VARCHAR(250),
-    Date_Of_Birth DATE,
+    Birth_Day VARCHAR(2),
+    Birth_Month VARCHAR(3),
+    Birth_Year VARCHAR(4),
     Email_ID VARCHAR(250) UNIQUE,
     Mobile_Number VARCHAR(250) UNIQUE,
     Gender VARCHAR(250),
@@ -18,7 +20,11 @@ CREATE TABLE SINFO (
     PIN_CODE VARCHAR(250),
     STATE VARCHAR(250),
     Country VARCHAR(250),
-    Hobbies VARCHAR(250),
+    Drawing_Hobby VARCHAR(7),
+    Singing_Hobby VARCHAR(7),
+    Dancing_Hobby VARCHAR(7),
+    Cooking_Hobby VARCHAR(7),
+    Other_Hobby VARCHAR(250),
     Class_X_Board VARCHAR(250),
     Class_X_Percentage VARCHAR(250),
     Class_X_Year VARCHAR(250),
@@ -31,12 +37,14 @@ CREATE TABLE SINFO (
     Masters_Board VARCHAR(250),
     Masters_Percentage VARCHAR(250),
     Masters_Year VARCHAR(250),
-    CoursesAppliedFor VARCHAR(250)
+    BCA VARCHAR(5),
+    B_COM VARCHAR(5),
+    B_SC VARCHAR(5),
+    B_A VARCHAR(5)
 );
 
 -- TO DISPLAY THE TABLE
 SELECT 
     *
 FROM
-    SINFO;
-
+    S_INFO;
