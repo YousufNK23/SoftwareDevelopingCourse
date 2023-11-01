@@ -23,42 +23,43 @@
         </nav>
     </nav><br><br>
 
-    <form action="CrudPhp/insert.php" method="post">
+    <form action="CrudPhp/insert.php" method="post" id="taskForm">
         <div class="container">
             <div class="mb-3">
                 <label class="form-label">Title:</label>
-                <input type="text" class="form-control" name="title">
+                <input type="text" class="form-control" name="title" id="title">
             </div>
             <div class="mb-3">
                 <label class="form-label">Description:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="desc"></textarea>
+                <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
             </div>
             <div class="mb-3">
                 <label class="form-label">StartDate:</label>
-                <input type="date" class="form-control" name="start">
+                <input type="date" class="form-control" id="start" name="start">
             </div>
             <div class="mb-3">
                 <label class="form-label">EndDate:</label>
-                <input type="date" class="form-control" name="end">
+                <input type="date" class="form-control" id="end" name="end">
             </div>
             <label class="form-label">Status:</label>
-            <select class="form-select" aria-label="Default select example" name="status">
+            <select class="form-select" aria-label="Default select example" id="status" name="status">
                 <option value="Not Started">Not Started</option>
                 <option value="In Progress">In Progress</option>
                 <option value="Completed">Completed</option>
             </select><br>
 
             <div class="d-grid gap-2">
-                <button class="btn btn-success" type="submit" name="insert">Add To List</button>
+                <button class="btn btn-success Insert" type="submit" name="insert">Add To List</button>
             </div>
             </form><br>
         
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn"><a href="task_list.php" style="font-size: 18px; color: blue; font-weight: 500;">Show Task List</a></button>
+        <a href="task_list.php" style="font-size: 18px; color: blue; font-weight: 500;">Show Task List</a>
     </div>
     </div>
     <br><br><br>
 
+    <script src="JS/insert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 

@@ -15,9 +15,8 @@ if (isset($_POST["EdittID"])) {
         $res= mysqli_query($con, $update);
 
         if ($res) {
-            echo "<script>alert('Task Successfully Updated!'); window.location.href = '../task_list.php';</script>";
-        }else {
-            echo "<script>alert('Error updating task: " . mysqli_error($con) . "'); window.location.href = '../task_list.php';</script>";
+            echo "<script>alert('Your task has been successfully updated.');
+            window.location.href = '../task_list.php';</script>";
         }
     }
 }
