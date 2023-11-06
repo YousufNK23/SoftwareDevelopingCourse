@@ -54,12 +54,12 @@ if (!$con) {
 
   <?php
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_FILES["image"])) {
-      $Name = $_FILES["image"]["name"];
-      $Size = $_FILES["image"]["size"];
-      $Tmp_Name = $_FILES["image"]["tmp_name"];
-      $Type = $_FILES["image"]["type"];
-      $Full_Path = $_FILES["image"]["full_path"];
+    if (isset($_FILES["file"])) {
+      $Name = $_FILES["file"]["name"];
+      $Size = $_FILES["file"]["size"];
+      $Tmp_Name = $_FILES["file"]["tmp_name"];
+      $Type = $_FILES["file"]["type"];
+      $Full_Path = $_FILES["file"]["full_path"];
 
       if ($Type == "application/pdf") {
         $Upload = move_uploaded_file($Tmp_Name, "CV_Vault/" . $Name);
@@ -89,7 +89,7 @@ if (!$con) {
     <!-- Container -->
     <div class="container">
       <!-- File input -->
-      <input class="file-input" type="file" id="file-input" name="image">
+      <input class="file-input" type="file" id="file-input" name="file">
       <!-- Submit -->
       <input type="submit" value="Upload" id="submit-button" class="submit-button">
     </div>
