@@ -86,11 +86,8 @@ if (!$con) {
   ?><br>
   
   <form action="index.php" method="post" enctype="multipart/form-data">
-    <!-- Container -->
     <div class="container">
-      <!-- File input -->
       <input class="file-input" type="file" id="file-input" name="file">
-      <!-- Submit -->
       <input type="submit" value="Upload" id="submit-button" class="submit-button">
     </div>
   </form><br>
