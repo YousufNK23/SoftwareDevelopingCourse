@@ -22,7 +22,7 @@ if (!$con) {
 //     Name VARCHAR(250),
 //     Size VARCHAR(50),
 //     Full_Path VARCHAR(250),
-//     Image TEXT(1000)    
+//     File TEXT(1000)    
 //     );";
 // $res= mysqli_query($con,$tb);
 
@@ -65,7 +65,7 @@ if (!$con) {
         $Upload = move_uploaded_file($Tmp_Name, "CV_Vault/" . $Name);
 
         if ($Upload) {
-          $Insert = "INSERT INTO CVU (Name, Size, Image) VALUES ('$Name', '$Size', '$Full_Path')";
+          $Insert = "INSERT INTO CVU (Name, Size, File) VALUES ('$Name', '$Size', '$Full_Path')";
           $res = mysqli_query($con, $Insert);
 
           if ($res) {
