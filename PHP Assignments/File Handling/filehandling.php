@@ -1,18 +1,18 @@
 <?php
 
-$f1 = fopen("F1.txt", "r");
-$f2 = fopen("F2.txt", "r");
-$f3 = fopen("F3.txt", "r");
-$f4 = fopen("F4.txt", "r");
-$f5 = fopen("F5.txt", "r");
-$f6 = fopen("F6.txt", "r");
-$f7 = fopen("F7.txt", "r");
-$f8 = fopen("F8.txt", "r");
-$f9 = fopen("F9.txt", "r");
-$f10 = fopen("F10.txt", "r");
-$f11 = fopen("F11.txt", "r");
-$f12 = fopen("F12.txt", "r");
-$f13 = fopen("F13.txt", "r");
+$f1 = fopen("vault/F1.txt", "r");
+$f2 = fopen("vault/F2.txt", "r");
+$f3 = fopen("vault/F3.txt", "r");
+$f4 = fopen("vault/F4.txt", "r");
+$f5 = fopen("vault/F5.txt", "r");
+$f6 = fopen("vault/F6.txt", "r");
+$f7 = fopen("vault/F7.txt", "r");
+$f8 = fopen("vault/F8.txt", "r");
+$f9 = fopen("vault/F9.txt", "r");
+$f10 = fopen("vault/F10.txt", "r");
+$f11 = fopen("vault/F11.txt", "r");
+$f12 = fopen("vault/F12.txt", "r");
+$f13 = fopen("vault/F13.txt", "r");
 
 if (!$f1) {
     die("Failed to load data ");
