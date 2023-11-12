@@ -15,7 +15,7 @@ $f12 = fopen("vault/F12.txt", "r");
 $f13 = fopen("vault/F13.txt", "r");
 
 if (!$f1 || !$f2 || !$f3 || !$f4 || !$f5 || !$f6 || !$f7 || !$f8 || !$f9 || !$f10 || !$f11 || !$f12 || !$f13) {
-    die("One or more files do not exist.");
+    die("Failed to load one or more files.");
 }
 
 ?>
